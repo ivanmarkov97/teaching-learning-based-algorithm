@@ -1,0 +1,2 @@
+# TLBO
+TLBO is a population-based MS algorithm which mimics the teaching and learning process of a typical class. In the TLBO, a group of learners is considered as the population of solutions, and the fitness of the solutions is considered as results or grades. The algorithm adaptively updates the grade of each learner in the class by learning from the teacher and learning through the interaction between learners. The TLBO process is carried out through two basic operations: teacher phase and learner phase.
