@@ -1,9 +1,9 @@
 from __future__ import print_function
 import numpy as np
 
-def fitness_func(X):
-	A = 10
-	return A * len(X) + sum([x**2 - A*np.cos(2.0 * np.pi * x) for x in X])
+#def fitness_func(X):
+#	A = 10
+#	return A * len(X) + sum([x**2 - A*np.cos(2.0 * np.pi * x) for x in X])
 
 class TLBO():
 	def __init__(self, n_learners, dim, tol=1e-5, early_stop=30, f=None):
@@ -70,7 +70,3 @@ class TLBO():
 
 		print('teacher ',self.teacher)
 		print('func ', self.fitness(self.teacher))
-
-if __name__ == '__main__':
-	tlbo = TLBO(n_learners=50, dim=32, tol=1e-5, early_stop=30, f=fitness_func)
-	tlbo.minimize()
